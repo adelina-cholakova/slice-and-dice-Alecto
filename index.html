@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alecto</title>
+    <link rel = "icon" href =  "images/title-icon.png" 
+        type = "image/x-icon"> 
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200;700&display=swap" rel="stylesheet">
+        
+    <script src="https://kit.fontawesome.com/8ee5654bb7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="main-page">
+        <header class="wrapper">
+            <div class="logo-container">
+                <span>Alecto<span class="logo-dot">.</span></span>
+            </div>
+            <div>
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="#main-page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about-us">About</a>
+                        </li>
+                        <li>
+                            <a href="#work">Work</a>
+                        </li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="carousel-container wrapper">
+            <div class="carousel-control">
+                <img src="images/previous.png" alt="previous-icon" onclick="showPrevious()">
+            </div>
+            <div class="carousel-main">
+                <div>
+                    <p id="slider-title"></p>
+                </div>
+                <div>
+                    <p id="slider-info"></p>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="learn-more-btn">Learn more</button>
+                </div>
+                <div class="dots-container">
+                    <ul class="dots">
+                        <li class="dot active-dot" onclick="currentSlide(0)">
+                            <a href="#"></a>
+                        </li>
+                        <li class="dot" onclick="currentSlide(1)">
+                            <a href="#"></a>
+                        </li>
+                        <li class="dot" onclick="currentSlide(2)">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="carousel-control">
+                <img src="images/next.png" alt="next-icon" onclick="showNext()">
+            </div>
+           
+        </div>
+    </div>
+
+    <section id="about-us">
+        <div class="about-us-container wrapper">
+            <div class="about-us-heading">
+                <h1>About us</h1>
+                <div class="divider"></div>
+                <div>
+                    <p>It is a long established fact that a reader will be distracted.</p>
+                </div>
+            </div>
+            <div class="about-us-main">
+                <div class="about-us-item">
+                    <div class="icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Lorem ipsum</h3>
+                    <div class="item-info">
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                    </div>
+                </div>
+                <div class="about-us-item">
+                    <div class="icon">
+                        <i class="fab fa-battle-net"></i>
+                    </div>
+                    <h3>Lorem ipsum</h3>
+                    <div class="item-info">
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                    </div>
+                </div>
+                <div class="about-us-item">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Lorem ipsum</h3>
+                    <div class="item-info">
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                    </div>
+                </div>
+                <div class="about-us-item">
+                    <div class="icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Lorem ipsum</h3>
+                    <div class="item-info">
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="button-container">
+                <button type="button" class="learn-more-btn">Learn more</button>
+            </div>
+        </div>
+    </section>
+    <section id="work">
+        <div class="work-container wrapper">
+            <div>
+                <img class="work-image" alt="work-image" src="images/work-image.png">
+            </div>
+            <div>
+                <div class="work-title">
+                    <h2>Lorem ipsum</h2>
+                </div>
+                <div>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="learn-more-btn">Learn more</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section id="services">
+        <div class="services-container wrapper">
+            <div>
+                <div class="services-title">
+                    <h2>Dolor sit amet</h2>
+                </div>
+                <div>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="learn-more-btn">Learn more</button>
+                </div>
+            </div>
+            <div class="services-img-container">
+                <img class="services-image" alt="services-image" src="images/laptop.png">
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="./resources-carousel/carousel.js"></script>
+    <script src="./script/carousel-activation.js"></script>
+</body>
+</html>
